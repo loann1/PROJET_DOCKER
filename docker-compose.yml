@@ -1,0 +1,46 @@
+version: '3.9'
+
+
+services:
+  db:
+    image: mariadb:10.11.2
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mypassword
+      MYSQL_DATABASE: nextcloud
+      MYSQL_USER: nextcloud
+      MYSQL_PASSWORD: mypassword
+    volumes:
+      - db:/var/lib/mysql
+    healthcheck:
+     test: ["CMD","mysqladmin","ping","-h","localhost","-pmypassword"]
+     start_period: 5s
+     interval: 5s
+     timeout: 5s
+     retries: 20
+    networks:
+      - backend
+  nextcloud:
+    build:
+      context: .
+      dockerfile: dockerfile
+    restart: always
+    depends_on:
+     db:
+      condition: service_healthy
+    environment:
+      MYSQL_HOST: db
+      MYSQL_DATABASE: nextcloud
+      MYSQL_USER: nextcloud
+      MYSQL_PASSWORD: mypassword
+    volumes:
+      - nextcloud:/var/www/html
+    ports:
+      - "8080:80"
+    networks:
+      - backend
+networks:
+  backend:
+volumes:
+  db:
+  nextcloud:
