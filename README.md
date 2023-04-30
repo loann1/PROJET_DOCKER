@@ -80,7 +80,7 @@ Après ces modification, je n'avais plus d'erreur sur lors du docker compose up,
 - Donc j'avais bien le Grafana et le Prometheus fonctionnels, mais je n'avais pas de données de Nextcloud qui remontaient lorsque je voulais créer un Dashboard ou quoique ce soit. 
 
 ## 2ème test : 
-J'ai donc fais d'autres test, avec d'autres docker-compose.yml (j'en enchainée pas mal de test donc je n'ai pas enregistré tous lees fichiers avec chaque modifications faites dessus. 
+J'ai donc fais d'autres test, avec d'autres docker-compose.yml (j'en enchainée pas mal de test donc je n'ai pas enregistré tous lees fichiers avec chaque modifications faites dessus). 
 
 ## 3ème test : 
 J'ai tenté de faire un docker-compose.yml qui régroupait la configuration du Nextcloud directement pour qu'ils soient créer tous ensemble en même temps. 
