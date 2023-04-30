@@ -89,7 +89,7 @@ J'ai tenté de faire un docker-compose.yml qui regroupait la configuration du Ne
 - Sachant que d'après mes premières recherches dessus, il n'y avait pas beaucoup plus d'informations dessus, et les solutions trouvaient me faisais réécrire tous les fichiers en entier... 
 
 
-## Résultat 
+# Résultat 
 
 Pour conclure, les deux parties du projet sont fonctionnelles mais indépendemment.
 Je n'ai pas réussi à lier les données Nextcloud à l'interface Grafana/Prometheus.  
