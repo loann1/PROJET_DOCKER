@@ -75,7 +75,7 @@ Nouvelle erreur après ces modifications -- > error loading config (--config.fil
 - J'ai fais plusieurs test en changeant le chemin du fichier prometheus.yml (chemin entier, chemin depuis l'endroit où on lance le docker compose up, chemin avec juste le nom du fichier...) 
 - Mon fichier de configuration prometheus.yml était au début dans un dossier /projet_docker/grafana_prometheus/prometheus/, mais vu que l'erreur me citer comme chemin - /etc/prometheus, j'ai donc copié le fichier de configuration dans ce dossier. 
 
-Après ces modification, je n'avais plus d'erreur sur lors du docker compose up, mais l'exécution de la commande ne s'arrêtait pas, donc je penses qu'elle ne s'est pas compléter entièrement, mais pourtant j'avais bien accès à l'interface Grafana depuis une page Web, et j'ai pu aussi ajouter le Prometheus comme souces de données dans le Grafana. 
+Après ces modification, je n'avais plus d'erreur sur lors du docker compose up, mais l'exécution de la commande ne s'arrêtait pas, donc je penses qu'elle ne s'est pas complétée entièrement, mais pourtant j'avais bien accès à l'interface Grafana depuis une page Web, et j'ai pu aussi ajouter le Prometheus comme souces de données dans le Grafana. 
 - Je voyais bien avec un docker ps que les containers étaient up, mais le docker-compose up ne s'est jamais arrêté. 
 - Donc j'avais bien le Grafana et le Prometheus fonctionnels, mais je n'avais pas de données de Nextcloud qui remontaient lorsque je voulais créer un Dashboard ou quoique ce soit. 
 
