@@ -83,9 +83,10 @@ Après ces modification, je n'avais plus d'erreur sur lors du docker compose up,
 J'ai donc fais d'autres test, avec d'autres docker-compose.yml (j'en enchainée pas mal de test donc je n'ai pas enregistré tous lees fichiers avec chaque modifications faites dessus). 
 
 ## 3ème test : 
-J'ai tenté de faire un docker-compose.yml qui régroupait la configuration du Nextcloud directement pour qu'ils soient créer tous ensemble en même temps. 
+J'ai tenté de faire un docker-compose.yml qui regroupait la configuration du Nextcloud directement pour qu'ils soient créer tous ensemble en même temps. 
 -- > ça ne fonctionnait toujours pas, je n'avais toujours pas de données Nextcloud. 
-J'ai chercher les causes, et j'ai lu qu'il fallait surement ajouter un pluggin sur la configuration du Nextcloud pour permettre à Prometheus de récupérer des métriques, mais je n'ai pas eu assez de temps pour tester cette idée, sachant que d'après mes premières recherches dessus, il n'y avait pas beaucoup plus d'informations dessus, et les solutions trouvaient me faisais réécrire les fichiers en entier... 
+- J'ai chercher les causes, et j'ai lu qu'il fallait surement ajouter un pluggin sur la configuration du Nextcloud pour permettre à Prometheus de récupérer des métriques, mais je n'ai pas eu assez de temps pour tester cette idée
+- Sachant que d'après mes premières recherches dessus, il n'y avait pas beaucoup plus d'informations dessus, et les solutions trouvaient me faisais réécrire tous les fichiers en entier... 
 
 
 ## Résultat 
