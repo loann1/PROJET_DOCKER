@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+  - job_name: 'nextcloud'
+    metrics_path: '/ocs/v2.php/apps/serverinfo/api/v1/info'
+    static_configs:
+      - targets: ['nextcloud:8080']
